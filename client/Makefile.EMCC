@@ -1,0 +1,41 @@
+EXEC 		= build/client
+EM++ 		= /mnt/data/code/c/libs/emsdk-portable/emscripten/1.38.21/em++
+
+EXTENSION 	= cpp
+
+CORE_SRC_DIR = ../core/src
+SRCS_DIR	= src
+
+INCS_DIR	= -Iinc -I/mnt/data/code/c++/libs/glm -I$(CORE_SRC_DIR)
+
+SRCS		= $(shell find $(SRCS_DIR) -type f -name *.$(EXTENSION))
+CORE_SRCS	= $(shell find $(CORE_SRC_DIR) -type f -name *.$(EXTENSION))
+
+EM++SRCS = $(SRCS)
+EM++SRCS += $(CORE_SRCS) 
+
+DIRS := . $(shell find $(OBJS_DIR) -type d)
+GARBAGE_PATTERNS := *.o *.d
+GARBAGE := $(foreach DIR,$(DIRS),$(addprefix $(DIR)/,$(GARBAGE_PATTERNS)))
+
+MAKE		= make --no-print-directory -C
+ECHO		= echo
+
+all		: comp
+
+run		: all
+		  ./$(EXEC)
+
+clean		:
+		  @rm -rf $(GARBAGE)
+
+
+-include $(DEPS)
+
+.PHONY		: all clean
+
+comp:
+	@$(EM++) -g -std=c++14 $(EM++SRCS) $< $(INCS_DIR) -s NO_EXIT_RUNTIME=0 -s TOTAL_MEMORY=67108864 \
+		-s WASM=1 -s USE_WEBGL2=1 -s FULL_ES3=3 -s USE_SDL=2\
+		--preload-file res -o $(EXEC).html
+

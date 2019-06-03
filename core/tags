@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BinaryReader	src/core/ext/io.cpp	/^BinaryReader::BinaryReader(const std::string &file)$/;"	f	class:BinaryReader
+BinaryReader	src/core/ext/io.cpp	/^BinaryReader::BinaryReader(std::vector<uint8_t> &buffer)$/;"	f	class:BinaryReader
+BinaryReader	src/core/ext/io.hpp	/^class BinaryReader$/;"	c
+BinaryWriter	src/core/ext/io.cpp	/^BinaryWriter::BinaryWriter(uint32_t defaultBufferSize)$/;"	f	class:BinaryWriter
+BinaryWriter	src/core/ext/io.hpp	/^class BinaryWriter$/;"	c
+delete_copy	src/core/ext/sugar.hpp	20;"	d
+delete_copy_and_move	src/core/ext/sugar.hpp	14;"	d
+htonf	src/core/ext/io.cpp	/^htonf(float val) $/;"	f	file:
+m_buffer	src/core/ext/io.hpp	/^	std::vector<uint8_t> m_buffer;$/;"	m	class:BinaryReader
+m_buffer	src/core/ext/io.hpp	/^	std::vector<uint8_t> m_buffer;$/;"	m	class:BinaryWriter
+m_bufferOffset	src/core/ext/io.hpp	/^	uint64_t m_bufferOffset;$/;"	m	class:BinaryReader
+ntohf	src/core/ext/io.cpp	/^ntohf(float val) $/;"	f	file:
+operator =	src/core/ext/rof.hpp	/^    rof &operator=(T &&o) {$/;"	f	struct:rof
+operator =	src/core/ext/rof.hpp	/^    rof &operator=(const T &o) {$/;"	f	struct:rof
+operator =	src/core/ext/rof.hpp	/^    rof &operator=(const rof<T, N> &o) {$/;"	f	struct:rof
+operator =	src/core/ext/rof.hpp	/^    rof &operator=(rof<T, N> &&o) {$/;"	f	struct:rof
+p	src/core/ext/rof.hpp	/^    void p(const char *str) {$/;"	f	struct:rof
+readData	src/core/ext/io.cpp	/^T BinaryReader::readData(uint32_t len)$/;"	f	class:BinaryReader
+readFloat	src/core/ext/io.cpp	/^BinaryReader::readFloat()$/;"	f	class:BinaryReader
+readMat3	src/core/ext/io.cpp	/^BinaryReader::readMat3()$/;"	f	class:BinaryReader
+readMat4	src/core/ext/io.cpp	/^BinaryReader::readMat4()$/;"	f	class:BinaryReader
+readQuat	src/core/ext/io.cpp	/^BinaryReader::readQuat()$/;"	f	class:BinaryReader
+readS16	src/core/ext/io.cpp	/^BinaryReader::readS16()$/;"	f	class:BinaryReader
+readS32	src/core/ext/io.cpp	/^BinaryReader::readS32()$/;"	f	class:BinaryReader
+readS8	src/core/ext/io.cpp	/^BinaryReader::readS8()$/;"	f	class:BinaryReader
+readString	src/core/ext/io.cpp	/^BinaryReader::readString()$/;"	f	class:BinaryReader
+readU16	src/core/ext/io.cpp	/^BinaryReader::readU16()$/;"	f	class:BinaryReader
+readU32	src/core/ext/io.cpp	/^BinaryReader::readU32()$/;"	f	class:BinaryReader
+readU8	src/core/ext/io.cpp	/^BinaryReader::readU8()$/;"	f	class:BinaryReader
+readVec2	src/core/ext/io.cpp	/^BinaryReader::readVec2()$/;"	f	class:BinaryReader
+readVec3	src/core/ext/io.cpp	/^BinaryReader::readVec3()$/;"	f	class:BinaryReader
+readVec4	src/core/ext/io.cpp	/^BinaryReader::readVec4()$/;"	f	class:BinaryReader
+rof	src/core/ext/rof.hpp	/^    rof() {$/;"	f	struct:rof
+rof	src/core/ext/rof.hpp	/^    rof(Args &&... args) : T(std::forward<Args>(args)...) {$/;"	f	struct:rof
+rof	src/core/ext/rof.hpp	/^    rof(T &&o) : T(std::move(o)) {$/;"	f	struct:rof
+rof	src/core/ext/rof.hpp	/^    rof(const T &o) : T(o) {$/;"	f	struct:rof
+rof	src/core/ext/rof.hpp	/^    rof(const rof<T, N> &o) : T(o) {$/;"	f	struct:rof
+rof	src/core/ext/rof.hpp	/^    rof(rof<T, N> &&o) : T(std::move(o)) {$/;"	f	struct:rof
+rof	src/core/ext/rof.hpp	/^struct rof : public T {$/;"	s
+saveToFile	src/core/ext/io.cpp	/^BinaryWriter::saveToFile(const std::string &file)$/;"	f	class:BinaryWriter
+writeData	src/core/ext/io.cpp	/^void BinaryWriter::writeData(const T *t, uint64_t len)$/;"	f	class:BinaryWriter
+writeFloat	src/core/ext/io.cpp	/^BinaryWriter::writeFloat(float data)$/;"	f	class:BinaryWriter
+writeMat3	src/core/ext/io.cpp	/^BinaryWriter::writeMat3(const glm::mat3 &m)$/;"	f	class:BinaryWriter
+writeMat4	src/core/ext/io.cpp	/^BinaryWriter::writeMat4(const glm::mat4 &m)$/;"	f	class:BinaryWriter
+writeQuat	src/core/ext/io.cpp	/^BinaryWriter::writeQuat(const glm::quat &q)$/;"	f	class:BinaryWriter
+writeS16	src/core/ext/io.cpp	/^BinaryWriter::writeS16(int16_t data)$/;"	f	class:BinaryWriter
+writeS32	src/core/ext/io.cpp	/^BinaryWriter::writeS32(int32_t data)$/;"	f	class:BinaryWriter
+writeS8	src/core/ext/io.cpp	/^BinaryWriter::writeS8(int8_t data)$/;"	f	class:BinaryWriter
+writeString	src/core/ext/io.cpp	/^BinaryWriter::writeString(const std::string &str)$/;"	f	class:BinaryWriter
+writeU16	src/core/ext/io.cpp	/^BinaryWriter::writeU16(uint16_t data)$/;"	f	class:BinaryWriter
+writeU32	src/core/ext/io.cpp	/^BinaryWriter::writeU32(uint32_t data)$/;"	f	class:BinaryWriter
+writeU8	src/core/ext/io.cpp	/^BinaryWriter::writeU8(uint8_t data)$/;"	f	class:BinaryWriter
+writeVec2	src/core/ext/io.cpp	/^BinaryWriter::writeVec2(const glm::vec2 &v)$/;"	f	class:BinaryWriter
+writeVec3	src/core/ext/io.cpp	/^BinaryWriter::writeVec3(const glm::vec3 &v)$/;"	f	class:BinaryWriter
+writeVec4	src/core/ext/io.cpp	/^BinaryWriter::writeVec4(const glm::vec4 &v)$/;"	f	class:BinaryWriter
+~rof	src/core/ext/rof.hpp	/^    ~rof() {$/;"	f	struct:rof
